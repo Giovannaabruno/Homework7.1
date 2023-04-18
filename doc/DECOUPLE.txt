@@ -1,0 +1,35 @@
+
+Model
+1.What files do you need to send along for only the views to compile?
+Model:
+Pixel: This stores the pixel data for each layer.
+Layer: this generates a whole pixel image.
+Project: Stores all the layers and Project information
+
+Controller
+We need ImageController and Runner
+ImageController - This file is needed because the view utilizes it to interact with the model.
+Runner - Runs the view itself using the controller.
+
+2.This list must include the interfaces and implementations for the view itself.
+The interfaces that are needed are:
+- ControllerInterfaces: stores data from the Controller class.
+- ProjectInterface: stores data from the Project class.
+- CollagingView: stores data from the Gui view class CollagingCommandView.
+- TextuiIn:stores data from the textui view class Textui.
+The implementations that are needed are:
+- ImageControler: stores data that manage all interactions with the model.
+- Project: Stores all the layers and Project information.
+- ImagePanel: Displayes the image.
+- CollagingcommandView: appendeds with the output.
+- CommandPanel: Strores the command that are needed for the controler.
+- Textui: Stores and excutes all the text command for the interface.
+-
+
+3.For each file, briefly explain why that file is necessary for the view to work.
+- ImageController: it is nessager for the controller because it handles
+ all intrations between the view and the model.
+ - Runner: Take the information stored in the view and runners the code.
+
+
+
